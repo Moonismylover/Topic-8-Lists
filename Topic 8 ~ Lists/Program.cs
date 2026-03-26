@@ -20,7 +20,8 @@
             /**
             
             1) What does the number mean in the square brackets names[1]?? (Referred to as index)
-                
+               It represents the order of the numbers in the sequence of the list.
+            2) 
 
             **/
         }
