@@ -9,6 +9,8 @@
             // A List allows us to store multiple variables of the same datatype. 
             // Ex. String name1, name2, name;
 
+            Random generator = new Random();
+
             List<string> names = new List<string> { "Trinity", "Neo", "Morpheus", "Smith", "Sliver"};
             Console.WriteLine(names[1] + " is 'The One'.");
             Console.WriteLine(names[3] + " is the bad guy.");
@@ -18,7 +20,8 @@
             Console.WriteLine(names[3] + " is the bad guy.");
             names[names.Count - 1] = "Cypher";
             Console.WriteLine(names[names.Count - 1] + " is the best!");
-
+            int num = generator.Next(0, 5);
+            Console.WriteLine($"{names[num]} is awesome!");
             Console.ReadLine();
 
             /**
@@ -32,8 +35,8 @@
                It counts the number of names in the list. 
             5) Change the name stored in the last position to "Cypher" and then print it. 
                Challenge: Use names.Count to change the last name instead of using the index number.
-               
-            6) 
+            6) Challenge: Can you print a 'random' name from the list? (random # for index)
+
             **/
         }
     }
