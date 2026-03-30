@@ -39,7 +39,7 @@
 
             **/
 
-            for (int i = 0; i < ; i++)
+            for (int i = 0; i < 6; i++)
             {
                 Console.WriteLine(i + ". " + names[i]);
             }
@@ -54,6 +54,7 @@
                number in the names List.
             3) How can you change the end condition of your for loop (the ‘i < 4’ part) so that it will work
                no matter how many items are in your array?
+               You can do i < names.Count. 
                
             **/
 
