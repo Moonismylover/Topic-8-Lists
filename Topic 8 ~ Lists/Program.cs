@@ -1,4 +1,14 @@
-﻿namespace Topic_8___Lists
+﻿using System.ComponentModel;
+using System.ComponentModel.Design;
+using System.Diagnostics.Metrics;
+using System.Runtime.Intrinsics.X86;
+using System.Threading.Channels;
+using System.Timers;
+using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Topic_8___Lists
 {
     internal class Program
     {
@@ -11,7 +21,7 @@
 
             Random generator = new Random();
 
-            List<string> names = new List<string> { "Trinity", "Neo", "Morpheus", "Smith", "Sliver", "Layla"};
+            List<string> names = new List<string> { "Trinity", "Neo", "Morpheus", "Smith", "Sliver", "Layla" };
             Console.WriteLine(names[1] + " is 'The One'.");
             Console.WriteLine(names[3] + " is the bad guy.");
             Console.WriteLine(names[4] + " is the best!");
@@ -76,14 +86,61 @@
                 Console.WriteLine("Please enter a number: ");
                 numbers.Add(Convert.ToInt32(Console.ReadLine()));
             }
-            Console.WriteLine("The largest number is " +  numbers.Max());
+            Console.WriteLine("The largest number is " + numbers.Max());
             Console.WriteLine("The smallest number is " + numbers.Min());
             Console.WriteLine("The sum is " + numbers.Sum());
             Console.WriteLine("The average is " + numbers.Average());
-
             Console.ReadLine();
 
+            Random generator2 = new Random();
 
+            List<int> integers = new List<int>();
+            for (int a = 0; a < 20; a++)
+            {
+                integers.Add(generator2.Next(1, 41));
+                Console.WriteLine("The average is " + integers.Average());
+                Console.WriteLine("The largest number is " + integers.Max());
+                Console.WriteLine("The smallest number is " + integers.Min());
+            }
+
+            Console.WriteLine("Display all the numbers in a list format on the same line!");
+
+            for (int a = 0; a < integers.Count(); a++)
+            {
+                if (integers[a] == 10)
+                {
+                    Console.WriteLine("Ten");
+                }
+                else if (integers[a] == 20);
+                {
+                    Console.WriteLine("Twenty");
+                }
+                else if (integers[a] == 30);
+                {
+                    Console.WriteLine("Thirty");
+                }
+                else if (integers[a] == 40)
+                {
+                    Console.WriteLine("Forty");
+                }
+                
+                Console.WriteLine($"{integers[a]}, ");
+            }
+
+            if (int a = 0; a < 20, a = a * 2)
+
+
+
+
+            //Programming Task Random List (you may modify the above program if you wish)
+
+//3.Loop through the List and double each number(change the values in the array).
+//4.Loop through the List and replace each number that is less than 50 with zero.
+//5.Display the numbers in the List on the same line, separated by a space.
+//6.Challenge: Use a loop to count the number of zeroes in the List and print it.
+// You will need to use a counter variable inside the loop
+
+//Solutions can be found here: https://github.com/AldworthClass/Programming-Task---Random-Lists
         }
     }
 }
