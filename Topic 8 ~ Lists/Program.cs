@@ -38,6 +38,14 @@
             6) Challenge: Can you print a 'random' name from the list? (random # for index)
 
             **/
+
+            Console.WriteLine();
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine(i + ". " + names[i]);
+            }
+
         }
     }
 }
