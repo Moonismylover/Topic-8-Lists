@@ -11,7 +11,7 @@
 
             Random generator = new Random();
 
-            List<string> names = new List<string> { "Trinity", "Neo", "Morpheus", "Smith", "Sliver"};
+            List<string> names = new List<string> { "Trinity", "Neo", "Morpheus", "Smith", "Sliver", "Layla"};
             Console.WriteLine(names[1] + " is 'The One'.");
             Console.WriteLine(names[3] + " is the bad guy.");
             Console.WriteLine(names[4] + " is the best!");
@@ -39,12 +39,23 @@
 
             **/
 
-            Console.WriteLine();
-
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < ; i++)
             {
                 Console.WriteLine(i + ". " + names[i]);
             }
+
+            /**
+            
+            1) How does using a loop help us to more quickly print the contents of this List?
+               It allows us to print all the names in one go. 
+            2) From the line that you declare the List names, remove the extra name you added so there are only 4 names, and run your program. 
+               What happened? Why? Can you fix the loop so it works?
+               It shows an error. You have to change the number of times the loop appears to match the 
+               number in the names List.
+            3) How can you change the end condition of your for loop (the ‘i < 4’ part) so that it will work
+               no matter how many items are in your array?
+               
+            **/
 
         }
     }
