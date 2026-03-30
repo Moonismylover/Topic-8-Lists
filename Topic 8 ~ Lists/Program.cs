@@ -74,8 +74,13 @@
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Please enter a number: ");
-                numbers.Add(Convert.ToInt32(Console.ReadLine());
+                numbers.Add(Convert.ToInt32(Console.ReadLine()));
             }
+            Console.WriteLine("The largest number is " +  numbers.Max());
+            Console.WriteLine("The smallest number is " + numbers.Min());
+            Console.WriteLine("The sum is " + numbers.Sum());
+            Console.WriteLine("The average is " + numbers.Average());
+
             Console.ReadLine();
 
 
