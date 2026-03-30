@@ -70,6 +70,13 @@
 
             **/
 
+            List<int> numbers = new List<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Please enter a number: ");
+                numbers.Add(Convert.ToInt32(Console.ReadLine());
+            }
+            Console.ReadLine();
 
 
         }
