@@ -56,7 +56,21 @@
                no matter how many items are in your array?
                You can do i < names.Count. 
                
+            1) What would Console.WriteLine(numbers[3]); print to the screen?
+               15
+            2) What would Console.WriteLine(numbers[1] + numbers[3]); print to the screen?
+               22
+            3) What would Console.WriteLine(numbers[1 + 3]); print to the screen?
+               34
+            4) How could you print the last element in this List? (there are 2 possible answers)
+               Console.WriteLine(names[names.Count -1]);
+               Console.WriteLine(names[7]);
+            5) What happens if you try to print: numbers[8]? numbers[-1]?
+               You get an error because there is no index 8. 
+
             **/
+
+
 
         }
     }
