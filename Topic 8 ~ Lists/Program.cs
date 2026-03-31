@@ -83,9 +83,11 @@ namespace Topic_8___Lists
             List<int> numbers = new List<int>();
             for (int i = 0; i < 10; i++)
             {
+                Console.WriteLine();
                 Console.WriteLine("Please enter a number: ");
                 numbers.Add(Convert.ToInt32(Console.ReadLine()));
             }
+            Console.WriteLine();
             Console.WriteLine("The largest number is " + numbers.Max());
             Console.WriteLine("The smallest number is " + numbers.Min());
             Console.WriteLine("The sum is " + numbers.Sum());
@@ -97,54 +99,55 @@ namespace Topic_8___Lists
             List<int> integers = new List<int>();
             for (int a = 0; a < 20; a++)
             {
-                integers.Add(generator2.Next(1, 41));
+                integers.Add(generator2.Next(41));
                 Console.WriteLine("The average is " + integers.Average());
                 Console.WriteLine("The largest number is " + integers.Max());
                 Console.WriteLine("The smallest number is " + integers.Min());
             }
 
+            Console.WriteLine();
             Console.WriteLine("Display all the numbers in a list format on the same line!");
 
-            for (int a = 0; a < integers.Count; a++)
+            for (int i = 0; i < integers.Count; i++)
             {
-                if (integers[a] == 10)
-                    Console.WriteLine("Ten");
-                else if (integers[a] == 20);
-                    Console.WriteLine("Twenty");
-                else if (integers[a] == 30);
-                    Console.WriteLine("Thirty");
-                else if (integers[a] == 40)
-                    Console.WriteLine("Forty");
-                else 
-                    Console.WriteLine($"{integers[a]}, ");
+                if (integers[i] == 10)
+                    Console.Write("Ten ");
+                else if (integers[i] == 20)
+                    Console.Write("Twenty ");
+                else if (integers[i] == 30)
+                    Console.Write("Thirty ");
+                else if (integers[i] == 40)
+                    Console.Write("Fourty ");
+                else
+                    Console.Write(integers[i] + " ");
             }
 
             Console.WriteLine("Double List: ");
 
-            for (int a = 0; a < integers.Count; a++)
+            for (int i = 0; i < integers.Count; i++)
             {
-                integers[a] = a * 2;
-                Console.WriteLine($"{integers[a]}, ");
+                integers[i] = i * 2;
+                Console.WriteLine($"{integers[i]}, ");
             }
 
             Console.WriteLine("50 is ZERO!");
-            for (int a = 0; a < integers.Count; a++)
+            for (int i = 0; i < integers.Count; i++)
             {
-                if (integers[a] == 50)
-                    integers[a] = 0;
+                if (integers[i] == 50)
+                    integers[i] = 0;
             }
 
             Console.WriteLine("Same Line!");
 
-            for (int a = 0; a < integers.Count; a++)
+            for (int i = 0; i < integers.Count; i++)
             {
-                Console.WriteLine($"{integers[a]}, ");
+                Console.WriteLine($"{integers[i]}, ");
             }
 
-            for (int a = 0; a < integers.Count; a++)
+            for (int i = 0; i < integers.Count; i++)
             {
                 int zeros = 0;
-                if (integers[a] == 0)
+                if (integers[i] == 0)
                     zeros++;
                 Console.WriteLine("There are " + zeros + "zeros!");
             }
