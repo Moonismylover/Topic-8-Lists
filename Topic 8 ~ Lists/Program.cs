@@ -129,11 +129,21 @@ namespace Topic_8___Lists
 
             Console.WriteLine("Double List: ");
 
-            if (int a = 0; a < 20, a++)
+            for (int a = 0; a < integers.Count; a++)
             {
                 integers[a] = a * 2;
                 Console.WriteLine($"{integers[a]}, ");
             }
+
+            Console.WriteLine("50 is ZERO!");
+            for (int a = 0; a < integers.Count; a++)
+            {
+                if (integers[a] == 50)
+                    integers[a] = 0;
+            }
+
+            Console.WritelIne("")
+            
 
 
 
