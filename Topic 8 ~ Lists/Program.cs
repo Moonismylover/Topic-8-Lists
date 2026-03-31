@@ -105,26 +105,18 @@ namespace Topic_8___Lists
 
             Console.WriteLine("Display all the numbers in a list format on the same line!");
 
-            for (int a = 0; a < integers.Count(); a++)
+            for (int a = 0; a < integers.Count; a++)
             {
                 if (integers[a] == 10)
-                {
                     Console.WriteLine("Ten");
-                }
                 else if (integers[a] == 20);
-                {
                     Console.WriteLine("Twenty");
-                }
                 else if (integers[a] == 30);
-                {
                     Console.WriteLine("Thirty");
-                }
                 else if (integers[a] == 40)
-                {
                     Console.WriteLine("Forty");
-                }
-                
-                Console.WriteLine($"{integers[a]}, ");
+                else 
+                    Console.WriteLine($"{integers[a]}, ");
             }
 
             Console.WriteLine("Double List: ");
