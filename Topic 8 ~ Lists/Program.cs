@@ -142,21 +142,21 @@ namespace Topic_8___Lists
                     integers[a] = 0;
             }
 
-            Console.WritelIne("")
-            
+            Console.WriteLine("Same Line!");
 
+            for (int a = 0; a < integers.Count; a++)
+            {
+                Console.WriteLine($"{integers[a]}, ");
+            }
 
+            for (int a = 0; a < integers.Count; a++)
+            {
+                int zeros = 0;
+                if (integers[a] == 0)
+                    zeros++;
+                Console.WriteLine("There are " + zeros + "zeros!");
+            }
 
-
-            //Programming Task Random List (you may modify the above program if you wish)
-
-//3.Loop through the List and double each number(change the values in the array).
-//4.Loop through the List and replace each number that is less than 50 with zero.
-//5.Display the numbers in the List on the same line, separated by a space.
-//6.Challenge: Use a loop to count the number of zeroes in the List and print it.
-// You will need to use a counter variable inside the loop
-
-//Solutions can be found here: https://github.com/AldworthClass/Programming-Task---Random-Lists
         }
     }
 }
