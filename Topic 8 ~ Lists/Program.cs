@@ -127,7 +127,13 @@ namespace Topic_8___Lists
                 Console.WriteLine($"{integers[a]}, ");
             }
 
-            if (int a = 0; a < 20, a = a * 2)
+            Console.WriteLine("Double List: ");
+
+            if (int a = 0; a < 20, a++)
+            {
+                integers[a] = a * 2;
+                Console.WriteLine($"{integers[a]}, ");
+            }
 
 
 
