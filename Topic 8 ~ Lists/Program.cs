@@ -100,10 +100,10 @@ namespace Topic_8___Lists
             for (int a = 0; a < 20; a++)
             {
                 integers.Add(generator2.Next(41));
-                Console.WriteLine("The average is " + integers.Average());
-                Console.WriteLine("The largest number is " + integers.Max());
-                Console.WriteLine("The smallest number is " + integers.Min());
             }
+            Console.WriteLine("The average is " + integers.Average());
+            Console.WriteLine("The largest number is " + integers.Max());
+            Console.WriteLine("The smallest number is " + integers.Min());
 
             Console.WriteLine();
             Console.WriteLine("Display all the numbers in a list format on the same line!");
@@ -117,7 +117,7 @@ namespace Topic_8___Lists
                 else if (integers[i] == 30)
                     Console.Write("Thirty ");
                 else if (integers[i] == 40)
-                    Console.Write("Fourty ");
+                    Console.Write("Forty ");
                 else
                     Console.Write(integers[i] + " ");
             }
@@ -141,16 +141,16 @@ namespace Topic_8___Lists
 
             for (int i = 0; i < integers.Count; i++)
             {
-                Console.WriteLine($"{integers[i]}, ");
+                Console.Write($"{integers[i]}, ");
             }
 
+            int zeros = 0;
             for (int i = 0; i < integers.Count; i++)
             {
-                int zeros = 0;
                 if (integers[i] == 0)
                     zeros++;
-                Console.WriteLine("There are " + zeros + "zeros!");
             }
+            Console.WriteLine("There are " + zeros + " zeros!");
 
         }
     }
